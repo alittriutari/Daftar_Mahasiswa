@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewMhs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo_user"
+        android:src="@drawable/icons8_male_user_filled_100"/>
+
+    <TextView
+        android:id="@+id/textViewNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewMhs"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageViewMhs"
+        android:text="@string/txtNIM"
+        android:textStyle="bold"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewNIM"
+        android:layout_below="@+id/textViewNIM"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtNama" />
+
+</RelativeLayout>
